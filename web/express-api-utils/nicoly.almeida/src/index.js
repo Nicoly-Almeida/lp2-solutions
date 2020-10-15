@@ -1,6 +1,6 @@
 const express = require("express");
-const app = express();
 const Routes = require("./routes");
+const app = express();
 const cors = require("cors");
 const port = 3000;
 
@@ -9,5 +9,4 @@ app.use(express.json());
 app.use(Routes);
 
 
-
-app.listen(3333, () => console.log("Server Rodando na porta 3000"));
+app.listen(3000, () => console.log("Server Rodando na porta 3000"));
